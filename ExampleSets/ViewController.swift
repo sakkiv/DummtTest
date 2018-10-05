@@ -21,9 +21,26 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
 
         let q = DispatchQueue.global()
+        
         q.sync{
              print("Helloo India_1!!!")
         }
+        q.async {
+            print("Helloo India_3!!!")
+        }
+        
+        q.sync{
+            self.HelloIndiaWorld_1()
+        }
+        
+        
+        let qrs = DispatchQueue.main
+        qrs.async {
+            print("Helloo India_7!!!")
+        }
+        
+       
+        
        self.HelloIndiaWorld()
     }
 
@@ -37,7 +54,32 @@ class ViewController: UIViewController {
         
          print("Helloo India_2!!!")
     }
-}
+    
+    func HelloIndiaWorld_1()
+    {
+        let qrs = DispatchQueue.main
+     
+        qrs.async {
+            print("Helloo India_6!!!")
+        }
 
-// OUTOUT: Helloo India_1!!!
-//         Helloo India_2!!!
+       
+    
+        print("Helloo India_4!!!")
+    }
+}
+/*
+ // OUTOUT:
+ 
+ Helloo India_1!!!
+ Helloo India_4!!!
+ Helloo India_3!!!
+ Helloo India_2!!!
+ 
+ -----------------
+ 
+ Helloo India_6!!!
+ Helloo India_7!!!
+
+ 
+*/

@@ -37,7 +37,7 @@
 /* Begin PBXFileReference section */
 		F57EE00D216745D000AE407D /* ExampleSets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleSets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F57EE010216745D000AE407D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F57EE012216745D000AE407D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F57EE012216745D000AE407D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = /Users/virtualstacks/Desktop/ExampleSets/ExampleSets/ViewController.swift; sourceTree = "<absolute>"; };
 		F57EE015216745D000AE407D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F57EE018216745D000AE407D /* ExampleSets.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ExampleSets.xcdatamodel; sourceTree = "<group>"; };
 		F57EE01A216745D200AE407D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };

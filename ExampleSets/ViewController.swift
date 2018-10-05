@@ -12,7 +12,8 @@ class ViewController: UIViewController {
 
     @IBAction func OperationQueue(_ sender: Any) {
         
-        
+      
+
         
         
     }
@@ -32,7 +33,7 @@ class ViewController: UIViewController {
             print("Helloo India_3!!!")
         }
         
-        q.sync{
+        q.async{
             self.HelloIndiaWorld_1()
         }
         
@@ -55,6 +56,17 @@ class ViewController: UIViewController {
         }
         
         
+        let LeftWorkZone = DispatchQueue(label: "perform_task_with_team_left")
+        let RightWorkZone = DispatchQueue(label: "perform_task_with_team_Right")
+      
+        LeftWorkZone.sync {
+            for numer in 1...3{ print("North \(numer)")}
+        }
+        RightWorkZone.sync {
+            for numer in 1...3{ print("South \(numer)") }
+        }
+        
+        
        self.HelloIndiaWorld()
     }
 
@@ -66,7 +78,27 @@ class ViewController: UIViewController {
     func HelloIndiaWorld()
     {
         
-         print("Helloo India_2!!!")
+        
+        DispatchQueue.global(qos: .background).async {
+            // Call your background task
+            DispatchQueue.main.async {
+                print("Helloo India_2!!!")
+            }
+        }
+        
+        DispatchQueue.global(qos: .userInitiated).async {
+            // Call your background task
+            DispatchQueue.main.async {
+                print("Helloo India_12!!!")
+            }
+        }
+        
+        DispatchQueue.global(qos: .default).async {
+            // Call your background task
+            DispatchQueue.main.async {
+                print("Helloo India_22!!!")
+            }
+        }
     }
     
     func HelloIndiaWorld_1()
@@ -77,7 +109,13 @@ class ViewController: UIViewController {
             print("Helloo India_6!!!")
         }
 
-       
+        DispatchQueue.global(qos: .background).async {
+            // Call your background task
+            DispatchQueue.main.async {
+                print("Helloo India_50!!!")
+            }
+        }
+        
     
         print("Helloo India_4!!!")
     }
@@ -86,9 +124,9 @@ class ViewController: UIViewController {
  // OUTOUT:
  
  Helloo India_1!!!
- Helloo India_4!!!
  Helloo India_3!!!
  🔷 0
+ Helloo India_4!!!
  🔷 1
  🔷 2
  🔷 3
@@ -108,12 +146,21 @@ class ViewController: UIViewController {
  ⚪️ 27
  ⚪️ 28
  ⚪️ 29
- Helloo India_2!!!
+ North 1
+ North 2
+ North 3
+ South 1
+ South 2
+ South 3
  
  -----------------
  
- Helloo India_6!!!
  Helloo India_7!!!
+ Helloo India_6!!!
+ Helloo India_50!!!
+ Helloo India_12!!!
+ Helloo India_22!!!
+ Helloo India_2!!!
 
 
  

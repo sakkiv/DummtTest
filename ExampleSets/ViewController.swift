@@ -22,9 +22,12 @@ class ViewController: UIViewController {
 
         let q = DispatchQueue.global()
         
+        // Background thread
         q.sync{
              print("Helloo India_1!!!")
         }
+        
+        
         q.async {
             print("Helloo India_3!!!")
         }
@@ -40,6 +43,17 @@ class ViewController: UIViewController {
         }
         
        
+        // Background thread
+        q.sync {
+            for i in 0..<10 {
+                print("🔷", i)
+            }
+        }
+        // Main thread
+        for i in 20..<30 {
+            print("⚪️", i)
+        }
+        
         
        self.HelloIndiaWorld()
     }
@@ -74,12 +88,33 @@ class ViewController: UIViewController {
  Helloo India_1!!!
  Helloo India_4!!!
  Helloo India_3!!!
+ 🔷 0
+ 🔷 1
+ 🔷 2
+ 🔷 3
+ 🔷 4
+ 🔷 5
+ 🔷 6
+ 🔷 7
+ 🔷 8
+ 🔷 9
+ ⚪️ 20
+ ⚪️ 21
+ ⚪️ 22
+ ⚪️ 23
+ ⚪️ 24
+ ⚪️ 25
+ ⚪️ 26
+ ⚪️ 27
+ ⚪️ 28
+ ⚪️ 29
  Helloo India_2!!!
  
  -----------------
  
  Helloo India_6!!!
  Helloo India_7!!!
+
 
  
 */

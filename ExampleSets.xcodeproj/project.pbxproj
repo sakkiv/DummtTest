@@ -15,6 +15,11 @@
 		F57EE01E216745D200AE407D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F57EE01C216745D200AE407D /* LaunchScreen.storyboard */; };
 		F57EE029216745D300AE407D /* ExampleSetsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57EE028216745D300AE407D /* ExampleSetsTests.swift */; };
 		F57EE034216745D300AE407D /* ExampleSetsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57EE033216745D300AE407D /* ExampleSetsUITests.swift */; };
+		F5F0B392216B49D600AF9903 /* CoredataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F0B391216B49D600AF9903 /* CoredataViewController.swift */; };
+		F5F0B394216B49E200AF9903 /* RealmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F0B393216B49E200AF9903 /* RealmViewController.swift */; };
+		F5F0B397216B550000AF9903 /* ModelSecond.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F5F0B395216B550000AF9903 /* ModelSecond.xcdatamodeld */; };
+		F5F0B39A216B5A9300AF9903 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F0B399216B5A9300AF9903 /* DataController.swift */; };
+		F5F0B39C216B5B2800AF9903 /* EmployeeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F0B39B216B5B2800AF9903 /* EmployeeModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		F57EE02F216745D300AE407D /* ExampleSetsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleSetsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F57EE033216745D300AE407D /* ExampleSetsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleSetsUITests.swift; sourceTree = "<group>"; };
 		F57EE035216745D300AE407D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5F0B391216B49D600AF9903 /* CoredataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoredataViewController.swift; sourceTree = "<group>"; };
+		F5F0B393216B49E200AF9903 /* RealmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmViewController.swift; sourceTree = "<group>"; };
+		F5F0B396216B550000AF9903 /* ModelSecond.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ModelSecond.xcdatamodel; sourceTree = "<group>"; };
+		F5F0B399216B5A9300AF9903 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		F5F0B39B216B5B2800AF9903 /* EmployeeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +109,7 @@
 		F57EE00F216745D000AE407D /* ExampleSets */ = {
 			isa = PBXGroup;
 			children = (
+				F5F0B398216B5A8200AF9903 /* CoeDataCustome */,
 				F57EE010216745D000AE407D /* AppDelegate.swift */,
 				F57EE012216745D000AE407D /* ViewController.swift */,
 				F57EE014216745D000AE407D /* Main.storyboard */,
@@ -106,6 +117,9 @@
 				F57EE01C216745D200AE407D /* LaunchScreen.storyboard */,
 				F57EE01F216745D200AE407D /* Info.plist */,
 				F57EE017216745D000AE407D /* ExampleSets.xcdatamodeld */,
+				F5F0B391216B49D600AF9903 /* CoredataViewController.swift */,
+				F5F0B393216B49E200AF9903 /* RealmViewController.swift */,
+				F5F0B395216B550000AF9903 /* ModelSecond.xcdatamodeld */,
 			);
 			path = ExampleSets;
 			sourceTree = "<group>";
@@ -126,6 +140,15 @@
 				F57EE035216745D300AE407D /* Info.plist */,
 			);
 			path = ExampleSetsUITests;
+			sourceTree = "<group>";
+		};
+		F5F0B398216B5A8200AF9903 /* CoeDataCustome */ = {
+			isa = PBXGroup;
+			children = (
+				F5F0B399216B5A9300AF9903 /* DataController.swift */,
+				F5F0B39B216B5B2800AF9903 /* EmployeeModel.swift */,
+			);
+			path = CoeDataCustome;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +282,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5F0B39A216B5A9300AF9903 /* DataController.swift in Sources */,
 				F57EE019216745D000AE407D /* ExampleSets.xcdatamodeld in Sources */,
+				F5F0B392216B49D600AF9903 /* CoredataViewController.swift in Sources */,
+				F5F0B394216B49E200AF9903 /* RealmViewController.swift in Sources */,
+				F5F0B397216B550000AF9903 /* ModelSecond.xcdatamodeld in Sources */,
 				F57EE013216745D000AE407D /* ViewController.swift in Sources */,
 				F57EE011216745D000AE407D /* AppDelegate.swift in Sources */,
+				F5F0B39C216B5B2800AF9903 /* EmployeeModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -597,6 +625,16 @@
 			);
 			currentVersion = F57EE018216745D000AE407D /* ExampleSets.xcdatamodel */;
 			path = ExampleSets.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		F5F0B395216B550000AF9903 /* ModelSecond.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F5F0B396216B550000AF9903 /* ModelSecond.xcdatamodel */,
+			);
+			currentVersion = F5F0B396216B550000AF9903 /* ModelSecond.xcdatamodel */;
+			path = ModelSecond.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

@@ -10,18 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBAction func OperationQueue(_ sender: Any) {
-        
-      
-
-        
-        
-    }
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 
-        let q = DispatchQueue.global()
+      /*  let q = DispatchQueue.global()
         
         // Background thread
         q.sync{
@@ -67,7 +61,7 @@ class ViewController: UIViewController {
         }
         
         
-       self.HelloIndiaWorld()
+       self.HelloIndiaWorld()*/
     }
 
     override func didReceiveMemoryWarning() {
@@ -75,7 +69,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    func HelloIndiaWorld()
+  /*  func HelloIndiaWorld()
     {
         
         
@@ -118,7 +112,7 @@ class ViewController: UIViewController {
         
     
         print("Helloo India_4!!!")
-    }
+    }*/
 }
 /*
  // OUTOUT:

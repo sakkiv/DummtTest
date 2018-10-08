@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Zav-mp-9Mo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WK6-vr-LU0">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -58,7 +58,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1641" y="-364"/>
+            <point key="canvasLocation" x="583" y="-596"/>
         </scene>
         <!--Coredata View Controller-->
         <scene sceneID="RsO-Gu-dxt">
@@ -153,7 +153,46 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Pl-aL-UPP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="631" y="-501"/>
+            <point key="canvasLocation" x="6" y="-1496"/>
+        </scene>
+        <!--Employee List-->
+        <scene sceneID="FHw-o5-f03">
+            <objects>
+                <viewController id="WK6-vr-LU0" customClass="EmployeeList" customModule="ExampleSets" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ngV-5S-K6z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7kj-Z8-j4o">
+                                <rect key="frame" x="113" y="44" width="167" height="73"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="167" id="IAv-3f-CGN"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="onButtonTap:" destination="WK6-vr-LU0" eventType="touchUpInside" id="vAM-wL-xVd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pN4-bN-n5A" firstAttribute="trailing" secondItem="7kj-Z8-j4o" secondAttribute="trailing" constant="95" id="Lrm-VM-ltv"/>
+                            <constraint firstItem="7kj-Z8-j4o" firstAttribute="top" secondItem="pN4-bN-n5A" secondAttribute="top" constant="24" id="Ztn-nP-KkF"/>
+                            <constraint firstItem="7kj-Z8-j4o" firstAttribute="leading" secondItem="pN4-bN-n5A" secondAttribute="leading" constant="113" id="au5-UI-7Yv"/>
+                            <constraint firstItem="pN4-bN-n5A" firstAttribute="bottom" secondItem="7kj-Z8-j4o" secondAttribute="bottom" constant="550" id="utt-lD-tFn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pN4-bN-n5A"/>
+                    </view>
+                    <connections>
+                        <segue destination="Zav-mp-9Mo" kind="show" identifier="second" id="sze-Vi-hc8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tsu-or-6CJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1575" y="-1384"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="sze-Vi-hc8"/>
+    </inferredMetricsTieBreakers>
 </document>

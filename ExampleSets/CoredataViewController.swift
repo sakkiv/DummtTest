@@ -13,8 +13,12 @@ import CoreData
 
 import UIKit
 
-class CoredataViewController: UIViewController {
+
+class CoredataViewController: UIViewController,someDelegate {
     
+    
+    
+//    var Ell: EmployeeList?
 
     @IBOutlet weak var emp_id: UITextField!
     @IBOutlet weak var emp_dept: UITextField!
@@ -30,11 +34,20 @@ class CoredataViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-       
-        
+     //   Ell?.delegate = self
+
       
     }
     
+    
+    func playPauseDidTap() {
+        print("play/pause tapped!!")
+    }
+    
+    func valueLable(update : String){
+        //self.lblTitle.text = update
+        print("UpdatedValue",update)
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
